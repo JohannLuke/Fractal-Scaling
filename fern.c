@@ -8,6 +8,7 @@
 #define WINDOW_HEIGHT 800
 #define NUM_THREADS 4
 
+// Initializing two structures
 typedef struct {
     double scale;
     double offsetX;
@@ -25,6 +26,7 @@ typedef struct {
     double offsetY;
 } FractalView;
 
+//Function to generate the Barnsley Fern thread
 void* barnsleyFernThread(void* arg) {
     ThreadData* data = (ThreadData*)arg;
     double x0 = 0, y0 = 0, x1, y1;
@@ -72,6 +74,7 @@ void* barnsleyFernThread(void* arg) {
     return NULL;
 }
 
+//Function for the Barnsley Fern 
 void barnsleyFern(SDL_Renderer *renderer, unsigned long iter, FractalView *view) {
     pthread_t threads[NUM_THREADS];
     ThreadData threadData[NUM_THREADS];
