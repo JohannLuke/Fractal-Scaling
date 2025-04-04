@@ -42,7 +42,7 @@ This project visualizes the Barnsley Fern fractal using SDL2 and multi-threading
 
 - **Zoom In/Out**: Use the mouse scroll wheel to zoom in or out.
 - **Pan**: Click and drag the mouse to move the fractal view around.
-- **Reset View**: Press the `R` key to reset the fractal's scale and offset..
+- **Reset View**: Press the `R` key to reset the fractal's scale and offset.
 - **Iterations**: Upon running, the program will ask for the number of iterations. The default is 50,000 iterations if no input is given.
 
 ### Working
